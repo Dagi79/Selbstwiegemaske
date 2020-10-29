@@ -30,5 +30,10 @@ namespace Selbstwiegemaske
         {
 
         }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            MessageBox.ShowWSLSPruefung"BOOOOOM!!!!!";
+        }
     }
 }

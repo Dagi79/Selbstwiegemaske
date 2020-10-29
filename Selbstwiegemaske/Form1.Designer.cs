@@ -32,6 +32,7 @@
             this.lblHallo = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
             // 
             // simpleButton1
@@ -76,11 +77,21 @@
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "Dobar den";
             // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(305, 250);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(166, 48);
+            this.simpleButton3.TabIndex = 4;
+            this.simpleButton3.Text = "Wehe du klickst!";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(879, 415);
+            this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.lblHallo);
@@ -99,6 +110,7 @@
         private DevExpress.XtraEditors.LabelControl lblHallo;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }
 
