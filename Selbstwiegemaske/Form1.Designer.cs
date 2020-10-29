@@ -31,6 +31,8 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.lblHallo = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
             // 
             // simpleButton1
@@ -56,23 +58,49 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(325, 182);
+            this.simpleButton2.Location = new System.Drawing.Point(305, 183);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(221, 39);
             this.simpleButton2.TabIndex = 2;
             this.simpleButton2.Text = "NICHT DRÜCKEN";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 20F);
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(456, 114);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(124, 33);
+            this.labelControl1.TabIndex = 3;
+            this.labelControl1.Text = "Dobar den";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
+            this.simpleButton3.Appearance.Options.UseFont = true;
+            this.simpleButton3.Location = new System.Drawing.Point(305, 250);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(166, 48);
+            this.simpleButton3.TabIndex = 4;
+            this.simpleButton3.Text = "Wehe du klickst!";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 278);
+            this.ClientSize = new System.Drawing.Size(879, 415);
+            this.Controls.Add(this.simpleButton3);
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.lblHallo);
             this.Controls.Add(this.simpleButton1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,6 +111,8 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.LabelControl lblHallo;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }
 
