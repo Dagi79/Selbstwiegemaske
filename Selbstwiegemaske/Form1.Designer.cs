@@ -40,9 +40,9 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(323, -16);
+            this.simpleButton1.Location = new System.Drawing.Point(323, 23);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(166, 107);
+            this.simpleButton1.Size = new System.Drawing.Size(166, 68);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "Klick mich";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
