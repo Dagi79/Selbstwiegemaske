@@ -32,7 +32,10 @@
             this.lblHallo = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // simpleButton1
@@ -58,9 +61,9 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(305, 183);
+            this.simpleButton2.Location = new System.Drawing.Point(305, 174);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(221, 39);
+            this.simpleButton2.Size = new System.Drawing.Size(475, 39);
             this.simpleButton2.TabIndex = 2;
             this.simpleButton2.Text = "NICHT DRÜCKEN";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
@@ -77,23 +80,27 @@
             this.labelControl1.TabIndex = 3;
             this.labelControl1.Text = "Dobar den";
             // 
-            // simpleButton3
+            // gridControl1
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Location = new System.Drawing.Point(305, 250);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(166, 48);
-            this.simpleButton3.TabIndex = 4;
-            this.simpleButton3.Text = "Wehe du klickst!";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            this.gridControl1.Location = new System.Drawing.Point(12, 228);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(862, 241);
+            this.gridControl1.TabIndex = 4;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(879, 415);
-            this.Controls.Add(this.simpleButton3);
+            this.ClientSize = new System.Drawing.Size(879, 481);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.lblHallo);
@@ -101,6 +108,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +121,8 @@
         private DevExpress.XtraEditors.LabelControl lblHallo;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }
 
