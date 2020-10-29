@@ -15,5 +15,10 @@ namespace Selbstwiegemaske
         {
             InitializeComponent();
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            this.lblHallo.Text = "Hallo Männer!";
+        }
     }
 }
