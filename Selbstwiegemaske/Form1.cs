@@ -20,5 +20,10 @@ namespace Selbstwiegemaske
         {
             this.lblHallo.Text = "Hallo Männer!";
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Selbstzerstörung wird eingeleitet");
+        }
     }
 }
