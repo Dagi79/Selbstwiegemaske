@@ -31,6 +31,7 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.lblHallo = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
             // simpleButton1
@@ -56,18 +57,31 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(325, 182);
+            this.simpleButton2.Location = new System.Drawing.Point(305, 183);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(221, 39);
             this.simpleButton2.TabIndex = 2;
             this.simpleButton2.Text = "NICHT DRÜCKEN";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 20F);
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(456, 114);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(124, 33);
+            this.labelControl1.TabIndex = 3;
+            this.labelControl1.Text = "Dobar den";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 278);
+            this.ClientSize = new System.Drawing.Size(879, 415);
+            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.lblHallo);
             this.Controls.Add(this.simpleButton1);
@@ -83,6 +97,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.LabelControl lblHallo;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }
 
