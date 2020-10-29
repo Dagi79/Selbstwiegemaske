@@ -25,5 +25,10 @@ namespace Selbstwiegemaske
         {
             MessageBox.Show("Selbstzerstörung wird eingeleitet");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
